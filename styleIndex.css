@@ -1,0 +1,254 @@
+.mes{
+		color: black;
+		background-color:white;
+		align-items: center;
+		width: 2.0em;
+		height: 2.5em;
+	}
+
+	td, tr{
+		border-width: 0.5px;
+		border-color: black;
+		border-style: solid;
+		padding: 1em;
+		cursor:default;
+	}
+
+	th{
+		background-color: gray;
+		font-style: bold;
+		color:white;
+		height: 3em;
+	}
+
+	td:hover{
+		background-color: #BAD7F3;	
+	}
+
+	table{
+		position: absolute;
+		box-shadow:0px 3px 10px 2px rgba(50, 50, 50, 0.9);		
+		background-color: rgba(255,255,255, 0.7);
+		z-index:-1;
+		margin: auto;
+
+	}
+
+	.celhover { border: 2px #1D66AD dotted; background-color: #BAD7F3;}
+
+	ul{
+		list-style-type:none;
+		width: 8em;
+		height: 5em;
+		background-color: #808080;
+		color: white;
+		padding: 0;
+		display: none;
+		margin:0;
+		z-index:1;
+		box-shadow:  0px 0px 3px 3px rgba(5, 5, 5, 0.5);
+		border:0.2px solid #666666;
+
+
+	}
+
+	li{
+		display: block;
+		padding-top:1.2em;
+		text-align: center;
+		text-decoration: none;
+		padding-bottom: 0.2em;
+	}
+
+	li:hover{
+		background-color: #666666; 
+		padding-top:1.2em;
+		box-shadow:  0px 0px 3px 3px rgba(5, 5, 5, 0.5);
+		cursor:pointer;	
+		padding-bottom: 0.2em;
+	}
+
+	.modal{
+		width: 25em;
+		height: 25em;
+		border-radius:0.5em;
+		border:1px solid black;
+		box-shadow:  0px 0px 3px 3px rgba(5, 5, 5, 0.5);
+		background-color: rgba(255,255,255, 0.9);	
+		position: fixed;
+		top: 30px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+	
+	.fechar {
+		position: absolute;
+		width: 25px;
+		height:25px;
+		right: -10px;
+		top: -10px;
+		text-align: center;
+		background: #ff4545;
+		border-radius:20px;
+		font-size: 20px;
+		color: #8d0000;
+		font-weight: bolder;
+		cursor: pointer;
+
+	}
+
+	a{
+		text-decoration: none;
+	}
+	a:visited{
+		color:white;
+	}
+	.modal-title{
+		height:1.5em;
+		text-align: center;
+		color:black;
+		font-family: 'Times New Roman', serif, bold;
+		font-size: 30px;
+		padding:0.2em;
+	}
+	
+	.modal-footer{
+		height: 2em;
+		text-align: right;
+		padding:0.2em;
+	}
+	.btn-cad{
+		width:5.5em;
+		height: 2.5em;
+		color: white;
+		font-family: 'Times New Roman', serif;
+		font-size: 15px;
+		padding: auto;
+		background-color: green;
+		font-weight: bolder;
+		border:0.5px solid green;
+		border-radius:0.5em;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+
+	.btn-cad:active:focus{
+		box-shadow: 0px -1px 5px 3px rgba(50, 50, 50, 0.75);
+		border:0.1 solid rgba(50,50,50, 0.75);
+		outline: 0;
+	}
+
+	input:focus{
+		border:1px solid transparent;
+		box-shadow:  0px 0px 5px 3px rgba(5, 5, 5, 0.5);
+		border: 0.5px solid  rgba(50, 50, 50, 0.50);
+		outline: 0;
+	}
+	input{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top:5px;		
+		width: 15em;
+		align-content: center;
+	}
+	textarea:focus{
+		border:1px solid transparent;
+		box-shadow:  0px 0px 5px 3px rgba(5, 5, 5, 0.5);
+		border: 0.5px solid  rgba(50, 50, 50, 0.50);
+		outline: 0;
+	}
+	textarea{
+		width: 15em;
+		height: 7em;
+		display: block;
+		margin-top: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	label{
+		margin-left: 1em;
+		font-family: 'Times New Roman', serif;
+
+	}
+	select{
+		outline:0;
+		color: black;
+		margin-top:5px;
+		width: 10em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	select option[value="aniversario"]{
+		background-color:lightblue;
+	}
+	select option[value="lembrete"]{
+		background-color: lightgreen;
+	}
+	select option[value="meta"]{
+		background-color: lightpink;
+	}
+	select option[value="evento"]{
+		background-color: purple;
+	}
+	#ano{
+		outline:0;
+		color: black;
+		margin-top:5px;
+		width: 5em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	object{
+		border:1px dotted red;
+		margin: auto;
+		overflow-x:"auto";
+		overflow-y:"auto";
+		word-wrap: break-word; 
+		z-index:-1;
+	}
+	#ver{
+		position:absolute;
+		border:1px solid black;
+		margin: auto;
+		top:26em;
+		z-index:-1;
+	}	
+
+	/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) {...}
+	td, tr{
+		padding:0.75em;
+	}
+	table{
+		margin:auto;
+		position:absolute;
+	}
+	.modal{
+		width: 19em;
+		height: 25em;
+		margin:auto;
+	}
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) {...}
+
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {...}
+
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {...}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {...}
