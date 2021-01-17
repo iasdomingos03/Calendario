@@ -14,6 +14,16 @@
 		text-decoration: none;
 		color:rgb(0,0,0);
 	}
+	.fechar {
+		position: absolute;
+		width: 25px;
+		text-align: center;
+		background: #ff4545;
+		color: #8d0000;
+		font-weight: bolder;
+		cursor: pointer;
+
+	}
 </style>
 
 <?php
@@ -48,7 +58,7 @@ $sql= $conn->query("SELECT * FROM agenda WHERE 	dia_evento = '$dia'");
 			}else if($row['tipo_evento'] == 'meta'){	
 				echo '<tr name="t_e" style="background-color:lightpink">';
 			}else if($row['tipo_evento'] == 'evento'){
-				echo '<tr name="t_e" style="background-color:purple">';
+				echo '<tr name="t_e" style="background-color:purple; color:white">';
 			}
 			echo '
 			<td id="n_e" value="'.$row['dia_evento'].'"  
@@ -69,5 +79,5 @@ $sql= $conn->query("SELECT * FROM agenda WHERE 	dia_evento = '$dia'");
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 
-<script src="functionsVerEvento.js" type="text/javascript"></script>
+<script src="js/functionsVerEvento.js" type="text/javascript"></script>
 </html>
